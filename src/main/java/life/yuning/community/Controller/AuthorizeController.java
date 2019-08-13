@@ -20,7 +20,7 @@ public class AuthorizeController {
 		accessTokenDTO.setClent_id("723c1ced647d2fc1b3c0");
 		accessTokenDTO.setClent_secret("9e1f8323f390e8aec114d36a4c0ce9db6f61cfa1");
 		accessTokenDTO.setCode(code);
-		accessTokenDTO.setRedirect_uri("http://localhost:8887/callbcack");
+		accessTokenDTO.setRedirect_uri("http://localhost:8887/callback");
 		accessTokenDTO.setState(state);
 		githubProvider.getAccessToken(accessTokenDTO);
 		return "index";
