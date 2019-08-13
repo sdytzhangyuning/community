@@ -14,7 +14,8 @@ public class AuthorizeController {
 	private GithubProvider githubProvider;
 	
 	@GetMapping("/callback")
-	public String callback(@RequestParam(name="code") String code,
+	public String callback(
+			@RequestParam(name="code") String code,
 			@RequestParam(name = "state") String state) {
 		AccessTokenDTO accessTokenDTO = new AccessTokenDTO();
 		accessTokenDTO.setClent_id("723c1ced647d2fc1b3c0");
