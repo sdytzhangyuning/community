@@ -1,22 +1,23 @@
 package life.yuning.community.dto;
 
 public class AccessTokenDTO {
-	private String clent_id;
-	private String clent_secret;
+	private String client_id;
+	private String client_secret;
 	private String code;
 	private String redirect_uri;
 	private String state;
-	public String getClent_id() {
-		return clent_id;
+	
+	public String getClient_id() {
+		return client_id;
 	}
-	public void setClent_id(String clent_id) {
-		this.clent_id = clent_id;
+	public void setClient_id(String client_id) {
+		this.client_id = client_id;
 	}
-	public String getClent_secret() {
-		return clent_secret;
+	public String getClient_secret() {
+		return client_secret;
 	}
-	public void setClent_secret(String clent_secret) {
-		this.clent_secret = clent_secret;
+	public void setClient_secret(String client_secret) {
+		this.client_secret = client_secret;
 	}
 	public String getCode() {
 		return code;
