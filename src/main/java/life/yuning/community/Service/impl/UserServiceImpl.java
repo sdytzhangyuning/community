@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void create(String name, Integer age) {
-        jdbcTemplate.update("insert into USER(NAME, AGE ) values(?, ?)", name, age);
+        jdbcTemplate.update("insert into USER(NAME, AGE) values(?, ?)", name, age);
     }
 
     @Override
